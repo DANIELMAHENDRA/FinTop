@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang Kembali\n di FindTop"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:drawableStart="@drawable/ic_person_24dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/rounded_input"
+            android:padding="14dp"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_lock_person_24"
+            android:drawablePadding="12dp"
+            android:background="@drawable/rounded_input"
+            android:padding="14dp"
+            android:textColor="#000"
+            android:textColorHint="#999"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MASUK"
+            android:textStyle="bold"
+            android:backgroundTint="#D9D9D9"
+            android:textColor="#000"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baru pertama kali?\nDaftar gratis dan mulai eksplorasi"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+
+    </LinearLayout>
+</ScrollView>

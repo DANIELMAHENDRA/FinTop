@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:radius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Gambar Laptop -->
+        <ImageView
+            android:id="@+id/imgLaptop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/a1"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_raounded_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Diskon Spesial!"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="@id/imgLaptop"
+            app:layout_constraintStart_toEndOf="@id/imgLaptop"
+            app:layout_constraintEnd_toStartOf="@id/btnDetail"
+            android:layout_marginStart="12dp" />
+
+        <!-- Isi -->
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tebus murah dan hemat hingga 50% untuk laptop pilihan minggu ini!"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toStartOf="@id/btnDetail"
+            android:layout_marginTop="4dp" />
+
+        <!-- Waktu -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 Mei 2025 – 14.30"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage"
+            app:layout_constraintStart_toStartOf="@id/tvMessage"
+            android:layout_marginTop="4dp" />
+
+        <!-- Tombol Lihat Detail -->
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="Lihat Detail"
+            android:textSize="11sp"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:elevation="2dp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Lingkaran Merah -->
+        <View
+            android:id="@+id/dotUnread"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/red_circle"
+            app:layout_constraintBottom_toBottomOf="@id/imgLaptop"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

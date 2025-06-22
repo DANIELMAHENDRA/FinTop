@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.findtop">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindTop"
+        tools:targetApi="31">
+        <activity
+            android:name=".DetailLaptopActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" /> <!-- ⛳ WelcomeActivity jadi halaman pertama -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FilterLaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MerkLaptopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailWhishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StreamerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProgramerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PekerjaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MahasiswaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailPenggunaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PenggunaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MerkActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

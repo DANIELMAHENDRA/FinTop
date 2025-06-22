@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Judul -->
+        <TextView
+            android:text="Selamat Datang di FindTop"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Subjudul -->
+        <TextView
+            android:text="Daftar untuk\nMulai Temukan Laptop Impianmu"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Input Nama -->
+        <EditText
+            android:id="@+id/etNama"
+            android:hint="Masukan nama lengkap"
+            android:drawableStart="@drawable/ic_person_24dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Input Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Masukan Email"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Input Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Masukan username"
+            android:drawableStart="@drawable/ic_person_24dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Input Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Masukan password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_lock_person_24"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Konfirmasi Password -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:hint="Konfirmasi ulang password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_lock_person_24"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:tint="@color/black"
+            android:layout_height="wrap_content" />
+
+        <!-- Tombol Daftar -->
+        <Button
+            android:id="@+id/btnDaftar"
+            android:text="Daftar Sekarang"
+            android:textStyle="bold"
+            android:backgroundTint="#D9D9D9"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Link ke Login -->
+        <TextView
+            android:id="@+id/tvMasuk"
+            android:text="Sudah punya akun? Masuk di sini"
+            android:textColor="#555"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</ScrollView>
